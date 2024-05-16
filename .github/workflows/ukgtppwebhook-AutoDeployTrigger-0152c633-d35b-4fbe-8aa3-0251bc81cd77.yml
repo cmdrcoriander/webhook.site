@@ -1,0 +1,47 @@
+name: Trigger auto deployment for ukgtppwebhook
+
+# When this action will be executed
+on:
+  # Automatically trigger it when detected changes in repo
+  push:
+    branches: 
+      [ master ]
+    paths:
+    - '**'
+    - '.github/workflows/ukgtppwebhook-AutoDeployTrigger-0152c633-d35b-4fbe-8aa3-0251bc81cd77.yml'
+
+  # Allow manual trigger 
+  workflow_dispatch:      
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions: 
+      id-token: write #This is required for requesting the OIDC JWT Token
+      contents: read #Required when GH token is used to authenticate with private repo
+
+    steps:
+      - name: Checkout to the branch
+        uses: actions/checkout@v2
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.UKGTPPWEBHOOK_AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.UKGTPPWEBHOOK_AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.UKGTPPWEBHOOK_AZURE_SUBSCRIPTION_ID }}
+
+      - name: Build and push container image to registry
+        uses: azure/container-apps-deploy-action@v2
+        with:
+          appSourcePath: ${{ github.workspace }} 
+          registryUrl: GitHub.com
+          registryUsername: ${{ secrets.UKGTPPWEBHOOK_REGISTRY_USERNAME }}
+          registryPassword: ${{ secrets.UKGTPPWEBHOOK_REGISTRY_PASSWORD }}
+          containerAppName: ukgtppwebhook
+          resourceGroup: AzureAIScott
+          imageToBuild: GitHub.com/ukgtppwebhook:${{ github.sha }}
+          _buildArgumentsKey_: |
+            _buildArgumentsValues_
+
+
