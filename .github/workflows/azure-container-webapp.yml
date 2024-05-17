@@ -52,7 +52,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ github.token }}
+          password: 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
 
       - name: Lowercase the repo name and username
         run: echo "REPO=${GITHUB_REPOSITORY,,}" >>${GITHUB_ENV}
