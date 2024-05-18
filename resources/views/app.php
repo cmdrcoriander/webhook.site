@@ -40,7 +40,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <div class="nav navbar-left navbar-form">
-                    <a href="https://github.com/cmddrcoriander/webhook.site" target="_blank"
+                    <a href="https://github.com/cmdrcoriander/webhook.site" target="_blank"
                        style="margin-top: 7px"
                        class="btn btn-xs btn-link">
                         Github Page</a>
@@ -146,8 +146,8 @@
                     <p>
                         <a class="github-button" href="https://github.com/fredsted/webhook.site"
                            data-icon="octicon-star" data-show-count="true"
-                           aria-label="Star fredsted/webhook.site on GitHub">Star on GitHub</a>
-                        <a href="https://github.com/fredsted/webhook.site"
+                           aria-label="Star cmdrcoriander/webhook.site on GitHub">Star on GitHub</a>
+                        <a href="https://github.com/cmdrcoriander/webhook.site"
                     </p>
                 </div>
                 <div ng-show="hasRequests">
