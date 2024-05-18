@@ -36,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/" ui-sref="home()"><img src="https://www.ukg.com/themes/custom/ukg/favicons/favicon-32x32.png" UKG Webhook Tester</a>
+                <a class="navbar-brand" href="/" ui-sref="home()"><img src="https://www.ukg.com/themes/custom/ukg/favicons/favicon-16x16.png" UKG Webhook Tester</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <div class="nav navbar-left navbar-form">
