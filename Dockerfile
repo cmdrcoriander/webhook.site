@@ -28,7 +28,7 @@ USER www-data
 ADD --chown=www-data:www-data /composer.json /var/www/html
 ADD --chown=www-data:www-data /composer.lock /var/www/html
 
-RUN sudo composer self-update --2 \
+RUN composer self-update --2 \
     && composer install --no-interaction --no-autoloader --no-dev --prefer-dist --no-scripts \
     && rm -rf /home/www-data/.composer/cache
 
