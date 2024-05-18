@@ -2,6 +2,9 @@
 <html ng-app="app" ng-controller="AppController">
 <head>
     <title>UKG Webhook Tester</title>
+    <link rel="icon" href="https://www.ukg.com/themes/custom/ukg/favicons/favicon-16x16.png" type="image/png"/>
+    <link rel="icon" href="https://www.ukg.com/themes/custom/ukg/favicons/favicon-32x32.png" type="image/png"/>
+    <link rel="mask-icon" href="https://www.ukg.com/themes/custom/ukg/favicons/safari-pinned-tab.svg" color="#005151"/>
     
     <script>
         AppConfig = {
@@ -33,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/" ui-sref="home()">UKG Webhook Tester</a>
+                <a class="navbar-brand" href="/" ui-sref="home()"><img src="https://www.ukg.com/themes/custom/ukg/favicons/favicon-32x32.png" UKG Webhook Tester</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <div class="nav navbar-left navbar-form">
