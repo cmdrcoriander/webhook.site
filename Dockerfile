@@ -32,7 +32,7 @@ RUN sudo apt-get remove composer \
     && sudo apt-get update \
     && sudo apt-get install curl \
     && sudo curl -s https://getcomposer.org/installer | php \
-    && sudo mv composer.phar /usr/local/bin/composer
+    && sudo mv composer.phar /usr/local/bin/composer \
     && composer install --no-interaction --no-autoloader --no-dev --prefer-dist --no-scripts \
     && rm -rf /home/www-data/.composer/cache
 
