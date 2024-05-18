@@ -42,8 +42,7 @@
                 <div class="nav navbar-left navbar-form">
                     <a href="https://github.com/cmdrcoriander/webhook.site" target="_blank"
                        style="margin-top: 7px"
-                       class="btn btn-xs btn-link">
-                        Github Page</a>
+                       class="btn btn-xs btn-link"></a>
                 </div>
                 <div class="nav navbar-right navbar-form hidden-sm">&nbsp;
                     <button type="button" class="btn btn-link openModal" data-modal="#editUrlModal"
@@ -144,10 +143,7 @@
                     <p></p>Click <b>New URL</b> to create a new url with the ability to
                         customize status code, response body, etc.</p>
                     <p>
-                        <a class="github-button" href="https://github.com/fredsted/webhook.site"
-                           data-icon="octicon-star" data-show-count="true"
-                           aria-label="Star cmdrcoriander/webhook.site on GitHub">Star on GitHub</a>
-                        <a href="https://github.com/cmdrcoriander/webhook.site"
+                       
                     </p>
                 </div>
                 <div ng-show="hasRequests">
