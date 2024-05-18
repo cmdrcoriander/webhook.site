@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="app" ng-controller="AppController">
 <head>
-    <title>Webhook Tester</title>
+    <title>UKG Webhook Tester</title>
     
     <script>
         AppConfig = {
@@ -33,22 +33,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/" ui-sref="home()">&#x2693;&#xFE0F; Webhook Tester</a>
+                <a class="navbar-brand" href="/" ui-sref="home()">UKG Webhook Tester</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <div class="nav navbar-left navbar-form">
-                    <a href="https://github.com/fredsted/webhook.site" target="_blank"
+                    <a href="https://github.com/cmddrcoriander/webhook.site" target="_blank"
                        style="margin-top: 7px"
                        class="btn btn-xs btn-link">
                         Github Page</a>
-                    <a href="https://github.com/fredsted/webhook.site#donate" target="_blank"
-                       style="margin-top: 7px"
-                       class="btn btn-xs btn-link">
-                        Donate</a>
-                    <a href="https://twitter.com/fredsted" target="_blank"
-                       style="margin-top: 7px"
-                       class="btn btn-xs btn-link">
-                        @fredsted</a>
                 </div>
                 <div class="nav navbar-right navbar-form hidden-sm">&nbsp;
                     <button type="button" class="btn btn-link openModal" data-modal="#editUrlModal"
