@@ -28,12 +28,8 @@ USER www-data
 ADD --chown=www-data:www-data /composer.json /var/www/html
 ADD --chown=www-data:www-data /composer.lock /var/www/html
 
-RUN sudo apt-get remove composer \
-    && sudo apt-get update \
-    && sudo apt-get install curl \
-    && sudo curl -s https://getcomposer.org/installer | php \
-    && sudo mv composer.phar /usr/local/bin/composer \
-    && composer install --no-interaction --no-autoloader --no-dev --prefer-dist --no-scripts \
+RUN $ composer global remove hirak/prestissimo \
+    && composer install  --no-interaction --optimize-autoloader --no-dev --no-cache --prefer-dist \
     && rm -rf /home/www-data/.composer/cache
 
 ADD --chown=www-data:www-data /storage /var/www/html/storage
