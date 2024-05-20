@@ -13,6 +13,7 @@ COPY resources /app/resources
 COPY gulpfile.js /app
 RUN npm run gulp
 
+
 ##############################################
 # Stage 2: Composer, nginx and fpm
 ##############################################

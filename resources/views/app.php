@@ -22,7 +22,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <meta name="description"
-          content="Instantly test, bin and log webhooks and HTTP requests with this handy tool that shows requests to a unique URL in realtime.">
+          content="Test, bin and log webhooks and HTTP requests in real-time.">
 </head>
 <body ng-cloak>
 <div class="mainView" ui-view>
