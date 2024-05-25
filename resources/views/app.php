@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html ng-app="app" ng-controller="AppController">
 <head>
-    <title>UKG Webhook Tester</title>
-    <link rel="icon" href="https://www.ukg.com/themes/custom/ukg/favicons/favicon-16x16.png" type="image/png"/>
-    <link rel="icon" href="https://www.ukg.com/themes/custom/ukg/favicons/favicon-32x32.png" type="image/png"/>
-    <link rel="mask-icon" href="https://www.ukg.com/themes/custom/ukg/favicons/safari-pinned-tab.svg" color="#005151"/>
-    
+    <title>Webhook Tester</title>
+   
     <script>
         AppConfig = {
             Broadcaster: "<?=config('broadcasting.default') == 'redis' ? 'socket.io' : 'pusher' ?>",
@@ -19,10 +16,6 @@
     <script src="js/socket.io.js"></script>
     <script src="js/libs.js"></script>
     <script src="js/bundle.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-    <meta name="description"
-          content="Test, bin and log webhooks and HTTP requests in real-time.">
 </head>
 <body ng-cloak>
 <div class="mainView" ui-view>
@@ -36,7 +29,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/" ui-sref="home()">UKG Webhook Tester</a>
+                <a class="navbar-brand" href="/" ui-sref="home()">Webhook Tester</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <div class="nav navbar-left navbar-form">
@@ -121,12 +114,11 @@
                     <button type="button" class="close" data-dismiss="tutorial" aria-label="Close"
                             ng-click="toggleTutorial()">
                         <span aria-hidden="true">&times;</span></button>
-                    <p><strong>Webhook.site</strong>
-                        allows you to easily test webhooks and other types of HTTP requests.
+                    <p><
                         
-                    <p>Any requests sent to that URL are logged here instantly</p>
+                    <p></p>
                     <hr>
-                    <p>Here's your unique URL that was created just now:</p>
+                    <p>Here's your unique URL:</p>
                     <p>
                         <code>{{ protocol }}//{{ domain }}/{{ token.uuid }}</code>
                         <a class="btn btn-xs btn-link copyTokenUrl" data-clipboard-target="#tokenUrl"
